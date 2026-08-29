@@ -1,0 +1,60 @@
+.sensor-trend {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px 18px;
+}
+
+.sensor-trend__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--text-faint);
+  margin-bottom: 8px;
+}
+
+.sensor-trend__toggle-all {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: border-color 0.12s ease, color 0.12s ease;
+}
+
+.sensor-trend__toggle-all:hover {
+  color: var(--teal);
+  border-color: var(--teal);
+}
+
+.sensor-trend__picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.sensor-chip {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  transition: all 0.12s ease;
+}
+
+.sensor-chip:hover {
+  border-color: var(--border-bright);
+  color: var(--text-dim);
+}
+
+.sensor-chip--active {
+  background: var(--bg-panel-raised);
+}

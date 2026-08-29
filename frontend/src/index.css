@@ -1,0 +1,69 @@
+:root {
+  --bg: #14181c;
+  --bg-panel: #1b2126;
+  --bg-panel-raised: #212830;
+  --border: #2c343c;
+  --border-bright: #3a444e;
+  --text: #edeff2;
+  --text-dim: #8b95a1;
+  --text-faint: #5a6570;
+
+  --teal: #4fa8a0;
+  --teal-glow: rgba(79, 168, 160, 0.18);
+  --amber: #e8a33d;
+  --amber-glow: rgba(232, 163, 61, 0.18);
+  --red: #c4453a;
+  --red-glow: rgba(196, 69, 58, 0.22);
+
+  --font-ui: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  background-image:
+    radial-gradient(ellipse 900px 500px at 15% 0%, rgba(79, 168, 160, 0.05), transparent),
+    radial-gradient(ellipse 700px 500px at 100% 100%, rgba(232, 163, 61, 0.04), transparent);
+  color: var(--text);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--teal-glow);
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

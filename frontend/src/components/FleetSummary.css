@@ -1,0 +1,65 @@
+.fleet-summary {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.fleet-summary__chip {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  color: var(--text-dim);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.fleet-summary__chip:hover {
+  border-color: var(--border-bright);
+}
+
+.fleet-summary__chip--active {
+  background: var(--bg-panel-raised);
+  border-color: var(--text-dim);
+}
+
+.fleet-summary__count {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+}
+
+.fleet-summary__label {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--text-faint);
+}
+
+.fleet-summary__chip--critical.fleet-summary__chip--active {
+  border-color: var(--red);
+  box-shadow: 0 0 0 1px var(--red) inset;
+}
+.fleet-summary__chip--critical .fleet-summary__count {
+  color: var(--red);
+}
+
+.fleet-summary__chip--warning.fleet-summary__chip--active {
+  border-color: var(--amber);
+  box-shadow: 0 0 0 1px var(--amber) inset;
+}
+.fleet-summary__chip--warning .fleet-summary__count {
+  color: var(--amber);
+}
+
+.fleet-summary__chip--healthy.fleet-summary__chip--active {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 1px var(--teal) inset;
+}
+.fleet-summary__chip--healthy .fleet-summary__count {
+  color: var(--teal);
+}

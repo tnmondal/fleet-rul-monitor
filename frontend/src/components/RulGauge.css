@@ -1,0 +1,38 @@
+.rul-gauge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.rul-gauge__readout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -18px;
+}
+
+.rul-gauge__value {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.risk-healthy {
+  color: var(--teal);
+}
+.risk-warning {
+  color: var(--amber);
+}
+.risk-critical {
+  color: var(--red);
+}
+
+.rul-gauge__unit {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--text-faint);
+  margin-top: 6px;
+}
